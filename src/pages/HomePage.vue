@@ -267,7 +267,7 @@ const jsonIssue = ref(false)
 const errorIssue = ref(false)
 
 // insert type
-const insertType = ref<insertTypes>('append')
+const insertType = ref<insertTypes>('replace')
 const insertTypeList = ['replace', 'append', 'newLine', 'NoAction'].map(
   item => ({
     label: t(item),
