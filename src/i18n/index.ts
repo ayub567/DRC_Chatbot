@@ -50,7 +50,7 @@ const messages = {
     ollamaModelSelectLabel: 'Model',
     ollamaModelSelectPlaceholder: 'Please select model',
     ollamaTemperatureLabel: 'Temperature',
-    translate: 'Trans',
+    translate: 'Consent',
     summary: 'Sum',
     polish: 'Polish',
     grammar: 'Grammar',
