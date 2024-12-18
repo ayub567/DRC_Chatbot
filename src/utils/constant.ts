@@ -110,16 +110,12 @@ export const availableModelsForOllama: IStringKeyMap = {
 export const buildInPrompt = {
   translate: {
     system: (language: string) =>
-      `Act as an ${language} translator, spelling corrector and improver.`,
+      `Act as an ${language} an English and Urdu language expert`,
+      // `Act as an ${language} translator, spelling corrector and improver.`,
     user: (
       text: string,
       language: string
-    ) => `I will speak to you in any language and you will detect the language,
-    translate it and answer in the corrected and improved version of my text, in ${language}.
-    I want you to replace my simplified A0-level words and sentences with more beautiful and elegant, 
-    upper level ${language} words and sentences.
-    Keep the meaning same, but make them more literary.
-    I want you to only reply the correction, the improvements and nothing else, do not write explanations.
+    ) => `Please review this document as an English and Urdu language expert. Please compare the Urdu and English text in this document and suggest whether the Urdu text is appropriately translated from the English text.
     Reply in ${language}.
     My first sentence is: ${text}`
   },
